@@ -16,10 +16,6 @@ _unit call FNC_RemoveAllGear;
 
 switch (_type) do {
 	
-	//#include "loadouts\USMCRiflePlatoon.sqf"
-	//#include "loadouts\RURiflePlatoon.sqf"
-	//#include "loadouts\BAF.sqf"
-	//#include "loadouts\1989USARMY.sqf"
-	//#include "loadouts\1989VDV.sqf"
-	//#include "loadouts\2000MSV.sqf"
+	#include "loadouts\uotc_loadout_west.sqf"
+	
 };
