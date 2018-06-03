@@ -22,53 +22,6 @@ if (!isDedicated) then {
 		sleep 0.01;
 		_y = [
 			"", 
-			"Auto Rifleman", 
-			"",
-			{
-				[] spawn {
-					[1, [], {[_player, "uotc_loadout_west_AR"] call FNC_GearScript;}, {}, "Rearming"] call ace_common_fnc_progressBar;
-				};
-			}, 
-			{true}
-		] call ace_interact_menu_fnc_createAction;
-
-		[gear_ar, 0, ["ACE_MainActions"], _y] call ace_interact_menu_fnc_addActionToObject;
-
-		sleep 0.01;
-		_y = [
-			"", 
-			"Grenadier", 
-			"",
-			{
-				[] spawn {
-					[1, [], {[_player, "uotc_loadout_west_GRN"] call FNC_GearScript;}, {}, "Rearming"] call ace_common_fnc_progressBar;
-				};
-			}, 
-			{true}
-		] call ace_interact_menu_fnc_createAction;
-
-		[gear_grn, 0, ["ACE_MainActions"], _y] call ace_interact_menu_fnc_addActionToObject;
-		[gear_grn_1, 0, ["ACE_MainActions"], _y] call ace_interact_menu_fnc_addActionToObject;
-		[gear_grn_2, 0, ["ACE_MainActions"], _y] call ace_interact_menu_fnc_addActionToObject;
-
-		sleep 0.01;
-		_y = [
-			"", 
-			"Rifleman AT", 
-			"",
-			{
-				[] spawn {
-					[1, [], {[_player, "uotc_loadout_west_RM"] call FNC_GearScript;}, {}, "Rearming"] call ace_common_fnc_progressBar;
-				};
-			}, 
-			{true}
-		] call ace_interact_menu_fnc_createAction;
-
-		[gear_rm, 0, ["ACE_MainActions"], _y] call ace_interact_menu_fnc_addActionToObject;
-
-		sleep 0.01;
-		_y = [
-			"", 
 			"Spawn Gear", 
 			"",
 			{
