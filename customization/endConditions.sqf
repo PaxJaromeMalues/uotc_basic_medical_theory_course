@@ -1,17 +1,17 @@
-private _westCasualty = "USMC" call FNC_CasualtyPercentage; //Gets the casualty percentage of team "USMC"
-private _eastCasualty = "VDV" call FNC_CasualtyPercentage; //Gets the casualty percentage of team "VDV"
+//private _westCasualty = "USMC" call FNC_CasualtyPercentage; //Gets the casualty percentage of team "USMC"
+//private _eastCasualty = "VDV" call FNC_CasualtyPercentage; //Gets the casualty percentage of team "VDV"
 
-if (_westCasualty >= 50) exitWith {
-	
-	"VDV VICTORY<br />USMC has retreated due to casualties." call FNC_EndMission;
-	
-};
+//if (_westCasualty >= 50) exitWith {
+//	
+//	"VDV VICTORY<br />USMC has retreated due to casualties." call FNC_EndMission;
+//	
+//};
 
-if (_eastCasualty >= 75) exitWith {
-	
-	"USMC VICTORY<br />VDV has retreated due to casualties." call FNC_EndMission;
-	
-};
+//if (_eastCasualty >= 75) exitWith {
+//	
+//	"USMC VICTORY<br />VDV has retreated due to casualties." call FNC_EndMission;
+//	
+//};
 /*
 Alternative methods of counting casualties
 
@@ -30,4 +30,4 @@ Adding extraction
 		this will check if at least 80% of remaining forces are present in extraction area
 */
 
-sleep (10); //This determines how frequently the end conditions should be checked in seconds
+//sleep (10); //This determines how frequently the end conditions should be checked in seconds
