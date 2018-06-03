@@ -30,3 +30,39 @@ if (!isDedicated) then {
 		//add more cases for other factions here
 	};
 };
+
+if (!isDedicated) then { //This scope is only for the player
+
+	"" spawn { //Create the object from code view
+
+		sleep 0.01;
+		waitUntil {!isNull player}; //Wait for the player to spawn
+
+		switch (side player) do { //get player side and execute
+
+			case west: { //execute in case that the player is on west side
+				
+				"" spawn {
+				
+					waitUntil {time > 1}; //wait until the actual mission has started
+          
+					"Course Participation Rules" hintC [ //hintC - display the namend rows below as bullet points in a message box
+					"Welcome to the UOTC Basic Medical Theory Course.",
+					"If you have to leave mid course, please announce this via side chat and leave quietly.",
+					"This course is designed to incorporate the participants via reading paragraphs or answering questions.",
+					"Professional beheaviour is expected at all times - Listen to the Instructors.",
+					"DO NOT USE ANY EQUIPMENT INBEFORE BEING ORDERED TO DO SO!",
+					"WEAPONS SPAWN IN SAFE MODE AND REMAIN IN SAFE MODE UNTIL ORDERED OTHERWISE!",
+					"Thank you for respecting these rules - have fun and enjoy the course!"
+					];
+					hintC_arr_EH = findDisplay 72 displayAddEventHandler ["unload", { //telling hintC to not be a retard a redisplay a second time with old ArmA1.0 funtion
+						0 = _this spawn {
+						_this select 0 displayRemoveEventHandler ["unload", hintC_arr_EH];
+						hintSilent "";
+						};
+					}];
+				};
+			};
+		};
+	};
+};
