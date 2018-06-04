@@ -3,7 +3,7 @@
 </p>
 <p align="center">
     <a href="https://github.com/PaxJaromeMalues/uotc_basic_medical_theory_course/releases/latest">
-        <img src="https://img.shields.io/badge/Version-0.1.0-red.svg" alt="Version">
+        <img src="https://img.shields.io/badge/Version-0.3.0-red.svg" alt="Version">
     </a>
 	<a href="https://github.com/dklollol/Olsen-Framework-Arma-3/releases/tag/3.3.3">
         <img src="https://img.shields.io/badge/OFW-3.3.3-blue.svg" alt="OFW">
