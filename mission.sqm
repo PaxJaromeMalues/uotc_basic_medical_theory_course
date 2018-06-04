@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6852.6089,148.75983,6964.7661};
-		dir[]={0.45151174,-0.66769582,0.59206182};
-		up[]={0.40506673,0.74402946,0.53115487};
-		aside[]={0.79527599,4.0705636e-006,-0.60647267};
+		pos[]={6850.6411,148.75983,6957.7744};
+		dir[]={0.36932585,-0.60308325,0.70718384};
+		up[]={0.27933678,0.79728699,0.53486753};
+		aside[]={0.88652521,4.4735134e-006,-0.46297479};
 	};
 };
 binarizationWanted=0;
@@ -128,11 +128,46 @@ randomSeed=9402656;
 class ScenarioData
 {
 	author="Pax'Jarome";
+	overviewText="UOTC Basic Medical Theory Course" \n "Version 1.0.0" \n "Please report issues per GitHub/UO Forums";
+	overviewTextLocked="UOTC Basic Medical Theory Course" \n "Version 1.0.0" \n "Please report issues per GitHub/UO Forums";
+	onLoadMission="UOTC Basic Medical Theory Course" \n "Version 1.0.0" \n "Please report issues per GitHub/UO Forums";
+	debriefing=0;
+	showUAVFeed=0;
+	saving=0;
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="EnableDebugConsole";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=1;
+	};
 };
 class Mission
 {
+	appId=395180;
 	class Intel
 	{
+		briefingName="UOTC Basic Medical Theory Course V1.0.0";
 		timeOfChanges=1800.0002;
 		startWeather=0;
 		startWind=0.1;
